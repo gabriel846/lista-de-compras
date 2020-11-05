@@ -7,20 +7,20 @@
 <body>
     
     <input type="text" id="produto">
-    <button id="btn">cadastrar produto</button>
+    <button id="btn">cadastrar produto</button>/*botao q cadastra o que esta escrito*/
 
     <ul>
         
     </ul>
 
     <script>
-        var $lista = document.querySelector('ul');
-        var $produto = document.querySelector('#produto');
-        var $botao = document.querySelector('#btn');
+        var $lista = document.querySelector('ul');/*a sequencia de produtos adicionados*/
+        var $produto = document.querySelector('#produto');/*o que foi adicionado */
+        var $botao = document.querySelector('#btn');/*botao para adicionar */
 
-        $botao.addEventListener('click', addProduto);
+        $botao.addEventListener('click', addProduto);/*funçao para botao funcionar*/
 
-        function addProduto() {
+        function addProduto() {/*funcao para adicionar o produto a lista*/
 
             var item = '<li>' + $produto.value + '</li>';
             $lista.innerHTML += item;
